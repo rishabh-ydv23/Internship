@@ -74,12 +74,6 @@ Open: http://localhost:8080
 RandomUser API
 https://randomuser.me/
 
-📸 Preview
-
-(If you host on GitHub Pages, add your link here.)
-
-https://your-username.github.io/your-repo/
-
 ✨ Future Improvements
 
 Add pagination
@@ -92,4 +86,4 @@ Add sorting (age, name)
 
 👤 Author
 
-Rishabh Yaduvanshi
+Rishabh 
