@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Responsive API Cards — Random Users</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">People<span class="accent">View</span></h1>
+
+      <div class="controls">
+        <input id="searchInput" type="search" placeholder="Search by name or email..." aria-label="Search users" />
+        <select id="natFilter" aria-label="Filter by nationality">
+          <option value="">All nationalities</option>
+          <option value="AU">Australia</option>
+          <option value="BR">Brazil</option>
+          <option value="CA">Canada</option>
+          <option value="CH">Switzerland</option>
+          <option value="DE">Germany</option>
+          <option value="DK">Denmark</option>
+          <option value="ES">Spain</option>
+          <option value="FI">Finland</option>
+          <option value="FR">France</option>
+          <option value="GB">United Kingdom</option>
+          <option value="IE">Ireland</option>
+          <option value="IR">Iran</option>
+          <option value="NO">Norway</option>
+          <option value="NL">Netherlands</option>
+          <option value="NZ">New Zealand</option>
+          <option value="TR">Turkey</option>
+          <option value="US">United States</option>
+        </select>
+        <button id="refreshBtn" title="Load new users">Refresh</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Info / error area -->
+    <div id="message" class="message" role="status" aria-live="polite"></div>
+
+    <!-- Loading spinner -->
+    <div id="spinner" class="spinner" aria-hidden="true">
+      <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+    </div>
+
+    <!-- Cards grid -->
+    <section id="cardsContainer" class="grid"></section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>Data from <a href="https://randomuser.me" target="_blank" rel="noopener noreferrer">RandomUser</a> • Built with HTML/CSS/Vanilla JS</small>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
